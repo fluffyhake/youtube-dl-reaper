@@ -3,7 +3,13 @@ import os
 import youtube_dl
 
 
-def youtubedl(*args):
-    output = youtube_dl(args)
 
+
+ydl_opts = {
+
+}
+
+def download(url):
+    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        ydl.download([url])
 

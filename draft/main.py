@@ -1,7 +1,7 @@
 #This program is what the user runs, and is dependet on youtube-dl-simple.py
 import time
 from getpass import getpass
-from youtube_dl_simple import youtubedl
+from youtube_dl_simple import download
 
 print("-"*30)
 print("If your source requires credentials, it needs to be inserted")
@@ -26,7 +26,7 @@ url = input("Input the URL to the video or video library: ")
 additional_args = input("Input additional argurments (blank for none): ")
 
 if credentials == True:
-    youtubedl(username, password, url)
+    download(username, password, url=url)
 
 elif credentials == False:
-    youtubedl(url)
+    download(url)
