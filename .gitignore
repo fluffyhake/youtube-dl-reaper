@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#Media extentions
+*.mp4
+*.mkv
+
 # C extensions
 *.so
 
