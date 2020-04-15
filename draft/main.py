@@ -26,7 +26,7 @@ url = input("Input the URL to the video or video library: ")
 additional_args = input("Input additional argurments (blank for none): ")
 
 if credentials == True:
-    download(username, password, url=url)
+    download(url)
 
 elif credentials == False:
     download(url)
