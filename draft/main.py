@@ -23,10 +23,13 @@ else:
 
 url = input("Input the URL to the video or video library: ")
 
-additional_args = input("Input additional argurments (blank for none): ")
+formatinput = input("Input format (mkv/mp4): ")
+
+
+
 
 if credentials == True:
     download(url)
 
 elif credentials == False:
-    download(url)
+    download(url, format = formatinput)
